@@ -1,0 +1,96 @@
+// LOCALHOST ### 
+GET http://localhost:8080/ss_hotels
+
+###
+GET http://localhost:8080/ss_hotels/6325d9779a0a46103327dae1
+
+###
+GET http://localhost:8080/ss_hotels/6338561fd594257d8c1bb552
+
+
+# Add new Contact information
+### 
+POST http://localhost:8080/ss_hotels  HTTP/1.1
+content-type: application/json
+
+{
+    "imageurl":"https://drsprnoe9nnhf.cloudfront.net/southernsun-04222022/cms/cache/v2/561cf6f679884.jpg/700x700/fit/80/f22e8905009108e1e3a390a32ab0f424.jpg",
+    "hotel":"Southern Sun Montecasino", 
+    "rating":"tripAdvisor - 5 star", 
+    "description":"Easily accessible from Johannesburg’s N1 freeway, this hotel is located within the popular gaming and entertainment Montecasino precinct and close to Fourways Mall. With seventeen upmarket conferencing and banqueting venues, a number of restaurants (including the popular Mediterranean-style Punchinello’s) and an outdoor pool area to relax in, it’s ideal for business and leisure travellers.", 
+    "phone":"+27 11 367 4367",
+    "email": "ssmontecasino.reservations@southernsun.com",
+    "website": "https://www.southernsun.com/southern-sun-montecasino",
+    "book_now": "http://localhost:8080/reservations/"
+
+}
+
+# Delete _id contact
+###
+DELETE  http://localhost:8080/ss_hotels/632d437d960458e663ceb332 HTTP/1.1
+content-type: application/json
+
+
+### 
+# under development
+PUT http://localhost:8080/ss_hotels/632d437d960458e663ceb332 HTTP/1.1
+content-type: application/json
+
+{
+    "imageurl":"https://drsprnoe9nnhf.cloudfront.net/southernsun-04222022/cms/cache/v2/561cf6f679884.jpg/700x700/fit/80/f22e8905009108e1e3a390a32ab0f424.jpg",
+    "hotel":"Southern Sun Montecasino", 
+    "rating":"tripAdvisor - 5 star", 
+    "description":"Easily accessible from Johannesburg’s N1 freeway, this hotel is located within the popular gaming and entertainment Montecasino precinct and close to Fourways Mall. With seventeen upmarket conferencing and banqueting venues, a number of restaurants (including the popular Mediterranean-style Punchinello’s) and an outdoor pool area to relax in, it’s ideal for business and leisure travellers.", 
+    "phone":"+27 11 367 4367",
+    "email": "ssmontecasino.reservations@southernsun.com",
+    "website": "https://www.southernsun.com/southern-sun-montecasino",
+    "book_now": "http://localhost:8080/reservations/"
+
+}
+
+
+// PRODUCTION Deploy ###
+
+###
+GET https://cse341-sunhotels-api.onrender.com/ss_hotels
+
+###
+GET https://cse341-sunhotels-api.onrender.com/ss_hotels/6338561fd594257d8c1bb552
+
+
+# Add new Contact information
+### 
+POST https://cse341-sunhotels-api.onrender.com/ss_hotels  HTTP/1.1
+content-type: application/json
+
+{
+    "imageurl":"https://drsprnoe9nnhf.cloudfront.net/southernsun-04222022/cms/cache/v2/561cf6f679884.jpg/700x700/fit/80/f22e8905009108e1e3a390a32ab0f424.jpg",
+    "hotel":"Southern Sun Montecasino", 
+    "rating":"tripAdvisor - 5 star", 
+    "description":"Easily accessible from Johannesburg’s N1 freeway, this hotel is located within the popular gaming and entertainment Montecasino precinct and close to Fourways Mall. With seventeen upmarket conferencing and banqueting venues, a number of restaurants (including the popular Mediterranean-style Punchinello’s) and an outdoor pool area to relax in, it’s ideal for business and leisure travellers.", 
+    "phone":"+27 11 367 4367",
+    "email": "ssmontecasino.reservations@southernsun.com",
+    "website": "https://www.southernsun.com/southern-sun-montecasino",
+    "book_now": "http://localhost:8080/reservations/"
+
+}
+
+# Delete _id contact
+###
+DELETE  https://cse341-sunhotels-api.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
+
+### 
+PUT https://cse341-sunhotels-api.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
+content-type: application/json
+
+{
+    "imageurl":"https://drsprnoe9nnhf.cloudfront.net/southernsun-04222022/cms/cache/v2/561cf6f679884.jpg/700x700/fit/80/f22e8905009108e1e3a390a32ab0f424.jpg",
+    "hotel":"Southern Sun Montecasino", 
+    "rating":"tripAdvisor - 5 star", 
+    "description":"Easily accessible from Johannesburg’s N1 freeway, this hotel is located within the popular gaming and entertainment Montecasino precinct and close to Fourways Mall. With seventeen upmarket conferencing and banqueting venues, a number of restaurants (including the popular Mediterranean-style Punchinello’s) and an outdoor pool area to relax in, it’s ideal for business and leisure travellers.", 
+    "phone":"+27 11 367 4367",
+    "email": "ssmontecasino.reservations@southernsun.com",
+    "website": "https://www.southernsun.com/southern-sun-montecasino",
+    "book_now": "http://localhost:8080/reservations/"
+
+}

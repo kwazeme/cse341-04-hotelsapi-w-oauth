@@ -1,0 +1,51 @@
+{
+  "name": "ss_hotels_catalogue_apioauth",
+  "version": "1.0.0",
+  "description": "Southern Sun Hotel Catalogue API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwazeme/cse341-04-hotelsapi-w-oauth.git"
+  },
+  "keywords": [
+    "catalogue",
+    "hotel",
+    "reservation",
+    "travel"
+  ],
+  "author": "kwazeme ogubie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwazeme/cse341-04-hotelsapi-w-oauth/issues"
+  },
+  "homepage": "https://github.com/kwazeme/cse341-04-hotelsapi-w-oauth#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "mongodb": "^4.10.0",
+    "swagger-ui-express": "^4.5.0"
+  }
+}

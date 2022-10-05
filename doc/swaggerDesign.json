@@ -1,0 +1,384 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Southern Sun Hotels API",
+        "description": "Southern Suns Hotels Catalogue and Booking information.Demo Academic Purposes Only"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "schemes": [
+        "https"
+    ],
+    "tags": [
+        {
+            "name": "reservations",
+            "description": "make your booking",
+            "externalDocs": {
+                "description": "",
+                "url": ""
+            }
+        },
+        {
+            "name": "Locations",
+            "description": "Hotel Card with information"
+        },
+        {
+            "name": "developing",
+            "description": "For up coming developments/routes",
+            "externalDocs": {
+                "description": "",
+                "url": ""
+            }
+        }
+    ],
+    "paths": {
+        "/reservations/": {
+            "get": {
+                "tags": [
+                    "reservations"
+                ],
+                "description": "User reservations collection",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "reservations"
+                ],
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstname": {
+                                    "example": "any"
+                                },
+                                "lastname": {
+                                    "example": "any"
+                                },
+                                "hotel_info": {
+                                    "example": "any"
+                                },
+                                "check_in_date": {
+                                    "example": "any"
+                                },
+                                "check_out_date": {
+                                    "example": "any"
+                                },
+                                "number_adults": {
+                                    "example": "any"
+                                },
+                                "number_children": {
+                                    "example": "any"
+                                },
+                                "payment_method": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/reservations/{id}": {
+            "get": {
+                "tags": [
+                    "reservations"
+                ],
+                "description": "Do not test, not yet completed",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "reservations"
+                ],
+                "description": "Do not test, not yet completed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstname": {
+                                    "example": "any"
+                                },
+                                "lastname": {
+                                    "example": "any"
+                                },
+                                "hotel_info": {
+                                    "example": "any"
+                                },
+                                "check_in_date": {
+                                    "example": "any"
+                                },
+                                "check_out_date": {
+                                    "example": "any"
+                                },
+                                "number_adults": {
+                                    "example": "any"
+                                },
+                                "number_children": {
+                                    "example": "any"
+                                },
+                                "payment_method": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "reservations"
+                ],
+                "description": "Do not test, not yet completed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/ss_hotels/": {
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "description": "User reservations collection",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Locations"
+                ],
+                "description": "",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "imageurl": {
+                                    "example": "any"
+                                },
+                                "hotel": {
+                                    "example": "any"
+                                },
+                                "rating": {
+                                    "example": "any"
+                                },
+                                "description": {
+                                    "example": "any"
+                                },
+                                "phone": {
+                                    "example": "any"
+                                },
+                                "email": {
+                                    "example": "any"
+                                },
+                                "website": {
+                                    "example": "any"
+                                },
+                                "book now": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/ss_hotels/{id}": {
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "description": "Do not test, not yet completed",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Locations"
+                ],
+                "description": "Do not test, not yet completed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "imageurl": {
+                                    "example": "any"
+                                },
+                                "hotel": {
+                                    "example": "any"
+                                },
+                                "rating": {
+                                    "example": "any"
+                                },
+                                "description": {
+                                    "example": "any"
+                                },
+                                "phone": {
+                                    "example": "any"
+                                },
+                                "email": {
+                                    "example": "any"
+                                },
+                                "website": {
+                                    "example": "any"
+                                },
+                                "book now": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Locations"
+                ],
+                "description": "Do not test, not yet completed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api-docs": {
+            "get": {
+                "description": "",
+                "parameters": [],
+                "responses": {}
+            }
+        }
+    }
+}
