@@ -24,8 +24,8 @@
             "description": "Southern Sun Booking User & Booking Information"
         },
         {
-            "name": "developing",
-            "description": "For up coming developments/routes",
+            "name": "users",
+            "description": "User login and creation routes",
             "externalDocs": {
                 "description": "",
                 "url": ""
@@ -355,6 +355,176 @@
                     "reservations"
                 ],
                 "description": "Do not test, not yet completed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/users/": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Get all users in collection",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Create new user in collection",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstname": {
+                                    "example": "any"
+                                },
+                                "lastname": {
+                                    "example": "any"
+                                },
+                                "hotel_info": {
+                                    "example": "any"
+                                },
+                                "check_in_date": {
+                                    "example": "any"
+                                },
+                                "check_out_date": {
+                                    "example": "any"
+                                },
+                                "number_adults": {
+                                    "example": "any"
+                                },
+                                "number_children": {
+                                    "example": "any"
+                                },
+                                "payment_method": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/user/{id}": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Dget user by ID",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Update user details",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstname": {
+                                    "example": "any"
+                                },
+                                "lastname": {
+                                    "example": "any"
+                                },
+                                "hotel_info": {
+                                    "example": "any"
+                                },
+                                "check_in_date": {
+                                    "example": "any"
+                                },
+                                "check_out_date": {
+                                    "example": "any"
+                                },
+                                "number_adults": {
+                                    "example": "any"
+                                },
+                                "number_children": {
+                                    "example": "any"
+                                },
+                                "payment_method": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "users"
+                ],
+                "description": "delete user from collection",
                 "parameters": [
                     {
                         "name": "id",
