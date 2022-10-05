@@ -5,7 +5,7 @@
         "title": "Southern Sun Hotels API",
         "description": "Southern Suns Hotels Catalogue and Booking information.Demo Academic Purposes Only"
     },
-    "host": "cse341-sunhotels-api.onrender.com",
+    "host": "cse341-sunhotels-api-w-oauth.onrender.com",
     "basePath": "/",
     "schemes": [
         "https"

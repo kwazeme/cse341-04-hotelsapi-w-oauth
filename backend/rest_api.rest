@@ -52,15 +52,15 @@ content-type: application/json
 // PRODUCTION Deploy ###
 
 ###
-GET https://cse341-sunhotels-api.onrender.com/ss_hotels
+GET https://cse341-sunhotels-api-w-oauth.onrender.com/ss_hotels
 
 ###
-GET https://cse341-sunhotels-api.onrender.com/ss_hotels/6338561fd594257d8c1bb552
+GET https://cse341-sunhotels-api-w-oauth.onrender.com/ss_hotels/6338561fd594257d8c1bb552
 
 
 # Add new Contact information
 ### 
-POST https://cse341-sunhotels-api.onrender.com/ss_hotels  HTTP/1.1
+POST https://cse341-sunhotels-api-w-oauth.onrender.com/ss_hotels  HTTP/1.1
 content-type: application/json
 
 {
@@ -77,10 +77,10 @@ content-type: application/json
 
 # Delete _id contact
 ###
-DELETE  https://cse341-sunhotels-api.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
+DELETE  https://cse341-sunhotels-api-w-oauth.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
 
 ### 
-PUT https://cse341-sunhotels-api.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
+PUT https://cse341-sunhotels-api-w-oauth.onrender.com/ss_hotels/632d43e5288e216a0f36b3e3 HTTP/1.1
 content-type: application/json
 
 {
