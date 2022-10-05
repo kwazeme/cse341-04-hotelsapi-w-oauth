@@ -404,28 +404,13 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstname": {
+                                "username": {
                                     "example": "any"
                                 },
-                                "lastname": {
+                                "password": {
                                     "example": "any"
                                 },
-                                "hotel_info": {
-                                    "example": "any"
-                                },
-                                "check_in_date": {
-                                    "example": "any"
-                                },
-                                "check_out_date": {
-                                    "example": "any"
-                                },
-                                "number_adults": {
-                                    "example": "any"
-                                },
-                                "number_children": {
-                                    "example": "any"
-                                },
-                                "payment_method": {
+                                "display_name": {
                                     "example": "any"
                                 }
                             }
@@ -483,28 +468,13 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstname": {
+                                "username": {
                                     "example": "any"
                                 },
-                                "lastname": {
+                                "password": {
                                     "example": "any"
                                 },
-                                "hotel_info": {
-                                    "example": "any"
-                                },
-                                "check_in_date": {
-                                    "example": "any"
-                                },
-                                "check_out_date": {
-                                    "example": "any"
-                                },
-                                "number_adults": {
-                                    "example": "any"
-                                },
-                                "number_children": {
-                                    "example": "any"
-                                },
-                                "payment_method": {
+                                "display_name": {
                                     "example": "any"
                                 }
                             }

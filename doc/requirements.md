@@ -8,6 +8,7 @@
 - Collections
   - hotel catalogue
   - user reservations
+  - users
 
 # At least one collection should store documents that have 7 fields or more
 
@@ -38,3 +39,9 @@ All routes should include data validation and error handling
 Project must incorporate use of OAuth for user management.
 API Documentation is professional, comprehensive, relevant, and accurate
 API is published to Render and can be called from external sources
+
+User (database collection)
+
+- username (string)
+- password (string)
+- display_name (string)
