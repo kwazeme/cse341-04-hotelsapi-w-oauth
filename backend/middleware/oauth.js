@@ -1,13 +1,14 @@
 const { auth } = require('express-openid-connect');
 
-const config = {
-  authRequired: false,
-  auth0Logout: true,
-  secret: 'a long, randomly-generated string stored in env',
-  baseURL: 'http://localhost:8080',
-  clientID: 'AuGXs7V7XeIwkzxXjpJ6sSdFYLaqeFaq',
-  issuerBaseURL: 'https://dev-putzt5i8.us.auth0.com'
-};
+  const config = {
+    authRequired: false,
+    auth0Logout: true,
+    baseURL: process.env.baseURL,
+    clientID: process.env.clientID,
+    issuerBaseURL: process.env.issuerBaseURL,
+    secret: process.env.secret
+  };
+
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
